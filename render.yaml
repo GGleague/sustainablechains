@@ -11,9 +11,3 @@ services:
         value: 3000
       - key: SESSION_SECRET
         sync: false
-      - key: DATABASE_PATH
-        value: /data/database.sqlite
-    disks:
-      - name: data
-        mountPath: /data
-        sizeGB: 1
