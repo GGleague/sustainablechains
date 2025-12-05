@@ -1,0 +1,4 @@
+https://example.com/
+https://example.com/register.html
+https://example.com/login.html
+https://example.com/admin-login.html

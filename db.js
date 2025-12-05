@@ -1,8 +1,15 @@
 const Database = require('better-sqlite3');
 const path = require('path');
 const crypto = require('crypto');
+const fs = require('fs');
 
-const dbPath = path.join(__dirname, 'database.sqlite');
+const dbPath = (() => {
+  const custom = process.env.DATABASE_PATH;
+  if (!custom) return path.join(__dirname, 'database.sqlite');
+  const dir = path.dirname(custom);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  return custom;
+})();
 const db = new Database(dbPath);
 
 function hashPassword(pw) {

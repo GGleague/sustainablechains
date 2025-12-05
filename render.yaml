@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: sustainablechains
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: SESSION_SECRET
+        sync: false
+      - key: DATABASE_PATH
+        value: /data/database.sqlite
+    disks:
+      - name: data
+        mountPath: /data
+        sizeGB: 1
