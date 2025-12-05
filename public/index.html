@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethical Brands Platform</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <div><strong>Ethical Supply</strong></div>
+    <nav>
+      <a href="/register.html">Apply as a Brand</a>
+      <a href="/login.html">Brand Login</a>
+    </nav>
+  </header>
+  <div class="container">
+    <section class="hero hero-image">
+      <div>
+        <h1>Ethical brands, verified supply chains.</h1>
+        <p>Brands apply, document facilities, and only approved, audited locations appear on the public map.</p>
+        <div class="btn-row">
+          <a class="btn" href="/register.html">Apply as a Brand</a>
+          <a class="btn secondary" href="/login.html">Brand Portal</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Live map of approved facilities</h3>
+      <p class="muted">Markers show approved facilities from verified brands.</p>
+      <div id="public-map" class="map-container"></div>
+    </section>
+
+    <section class="card">
+      <h3>Approved brands</h3>
+      <div id="brands-list" class="grid"></div>
+    </section>
+  </div>
+  <footer class="footer">
+    <div>Transparency-first commerce.</div>
+    <div><a class="muted" href="/admin-login.html">Admin</a></div>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/js/map.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

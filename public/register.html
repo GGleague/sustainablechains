@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply as a Brand</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <div><strong>Ethical Supply</strong></div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/login.html">Brand Login</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="card">
+      <h3>Brand Application</h3>
+      <form id="register-form">
+        <label for="name">Brand Name</label>
+        <input id="name" name="name" required>
+        <label for="contact_name">Contact Name</label>
+        <input id="contact_name" name="contact_name">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required>
+        <label for="description">Short Description</label>
+        <textarea id="description" name="description" rows="3"></textarea>
+        <label for="supply_chain_overview">Supply chain overview (where are your facilities?)</label>
+        <textarea id="supply_chain_overview" name="supply_chain_overview" rows="3" required></textarea>
+        <button class="btn" type="submit">Submit Application</button>
+      </form>
+      <div id="register-message" class="message"></div>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+</body>
+</html>

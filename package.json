@@ -1,0 +1,19 @@
+{
+  "name": "supply_chain_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "better-sqlite3": "^12.5.0",
+    "express": "^5.2.0",
+    "express-session": "^1.18.2",
+    "stripe": "^20.0.0"
+  }
+}

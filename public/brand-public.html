@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Profile</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <div><strong>Ethical Supply</strong></div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/login.html">Brand Login</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="card" id="brand-info">
+      <div style="display:flex; gap:16px; align-items:center;">
+        <img id="brand-logo" alt="Brand logo" style="width:90px; height:90px; border-radius:12px; object-fit:cover; background:#e5e7eb;">
+        <div>
+          <h3 id="brand-name" style="margin:0;"></h3>
+          <p id="brand-description" style="margin:4px 0;"></p>
+          <p id="brand-story" style="color:#4b5563;"></p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Approved Facilities</h3>
+      <div id="public-map" class="map-container"></div>
+      <div id="facility-list"></div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/js/map.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

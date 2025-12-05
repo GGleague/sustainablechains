@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <div><strong>Admin Dashboard</strong></div>
+    <nav>
+      <a href="/">Public Site</a>
+      <a href="#" id="admin-logout">Logout</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="card">
+      <h3>Pending Brands</h3>
+      <div id="pending-brands"></div>
+    </div>
+
+    <div class="card">
+      <h3>Pending Supply Points</h3>
+      <div id="pending-points"></div>
+    </div>
+
+    <div class="card">
+      <h3>Billing Jobs</h3>
+      <button class="btn" id="run-monthly">Run monthly billing</button>
+      <button class="btn secondary" id="run-annual">Run annual billing</button>
+      <pre id="billing-output"></pre>
+    </div>
+  </div>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

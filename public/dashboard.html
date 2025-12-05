@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <div><strong>Brand Dashboard</strong></div>
+    <nav>
+      <a href="/">Public Site</a>
+      <a href="#" id="logout-btn">Logout</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div id="status-banner" class="status-bar"></div>
+
+    <div class="card">
+      <h3>Profile</h3>
+      <form id="profile-form"></form>
+    </div>
+
+    <div class="card">
+      <h3>Supply Chain Map</h3>
+      <div id="brand-map" class="map-container"></div>
+      <div id="points-list"></div>
+      <h4>Add new point</h4>
+      <form id="point-form"></form>
+    </div>
+
+    <div class="card">
+      <h3>Subscription & Billing</h3>
+      <div id="subscription-section"></div>
+      <div id="invoice-list"></div>
+    </div>
+
+    <div class="card">
+      <h3>Account Settings</h3>
+      <div id="account-actions"></div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/js/map.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
